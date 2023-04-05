@@ -70,5 +70,5 @@ predicted_labels = np.argmax(predictions, axis=1)
 # Calculer la précision sur les données de test
 accuracy = np.mean(predicted_labels == np.argmax(y_test, axis=1))
 print('Accuracy:', accuracy)
-
+model.save("model.h5")
 
